@@ -8,8 +8,9 @@ on:
       - development
 
 env:
-  DOCKER_REGISTRY_HOST: ${{ secrets.DOCKER_REGISTRY_HOST }}
-  DOCKER_IMAGE: ${{ github.repository }}
+  DOCKER_REGISTRY_HOST: "docker.io"
+  DOCKER_REGISTRY_USERNAME: "sanghuynh20000"
+  DOCKER_IMAGE: "test-code-coverage"
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
